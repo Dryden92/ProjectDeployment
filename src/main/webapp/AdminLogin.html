@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Login – Online Electronic Store</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #6dd5fa, #2980b9);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 40px 50px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 250px;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 25px;
+        background-color: #34495e;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #2ecc71;
+        transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+</style>
+</head>
+<body>
+
+    <h1>Admin Login – Online Electronic Store</h1>
+
+    <form action="alog" method="post">
+        <label style="color:white; font-size: 18px;">User Name</label><br>
+        <input type="text" name="name" required/><br>
+        
+        <label style="color:white; font-size: 18px;">Password</label><br>
+        <input type="password" name="pwd" required/><br><br>
+        
+        <input type="submit" value="Login"/>
+    </form>
+
+</body>
+</html>
